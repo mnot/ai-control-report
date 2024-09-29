@@ -13,7 +13,7 @@ keyword:
  - Artificial Intelligence
  - robots.txt
 venue:
-  github: mnot/ai-control-report
+  github: "mnot/ai-control-report"
 
 author:
  -

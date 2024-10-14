@@ -47,6 +47,13 @@ informative:
       -
         org: Internet Architecture Board
 
+  AI-ACT:
+    title: Regulation (eu) 2024/1689 of the European Parliament and of the Council
+    target: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+    author:
+      -
+        org: European Parliament
+    date: 2024-06-13
 
 --- abstract
 
@@ -61,7 +68,11 @@ Note that this document is a report on the proceedings of the workshop. The view
 
 The Internet Architecture Board (IAB) holds occasional workshops designed to consider long-term issues and strategies for the Internet, and to suggest future directions for the Internet architecture. This long-term planning function of the IAB is complementary to the ongoing engineering efforts performed by working groups of the Internet Engineering Task Force (IETF).
 
-The IAB convened the AI-CONTROL Workshop to "explore practical opt-out mechanisms for AI and build an understanding of use cases, requirements, and other considerations in this space." {{CFP}} In particular, the emerging practice of using the Robots Exclusion Protocol {{RFC9309}} -- also known as "robots.txt" --
+The Internet is one of the major sources of data used to train large language models (LLMs, or more colloquially, "AI"). Because this use was not envisioned by most publishers of information on the Internet, a means of expressing the owners' preferences regarding AI crawling has emerged, sometimes backed by law (e.g., in the European Union's AI Act {{AI-ACT}}).
+
+The IAB convened the AI-CONTROL Workshop to "explore practical opt-out mechanisms for AI and build an understanding of use cases, requirements, and other considerations in this space." {{CFP}} In particular, the emerging practice of using the Robots Exclusion Protocol {{RFC9309}} -- also known as "robots.txt" -- has been uncoordinated, and may or may not be a suitable way to control AI crawlers. However, discussion was not limited to consideration of robots.txt, and approaches other than opt-out were considered.
+
+To assure many viewpoints were represented, the program committee invited a broad selection of technical experts, AI vendors, content publishers, civil society advocates, and policymakers.
 
 
 ## Chatham House Rule
@@ -77,7 +88,6 @@ Participants agreed to conduct the workshop under the Chatham House Rule {{CHATH
 # Vocabulary
 
 # Potential Future Work
-
 
 # Security Considerations
 
@@ -110,11 +120,11 @@ Lightning talks
 
 ### Friday 2024-09-20
 
-Out Out Attachment: robots.txt and beyond
+Opt-Out Attachment: robots.txt and beyond
 : Considerations in how policy is attached to content on the Internet
 
-Vocabulary: what opt out means
-: What information the opt out signal needs to convey
+Vocabulary: what opt-out means
+: What information the opt-out signal needs to convey
 
 Discussion and wrap-up
 : Synthesis of the workshop's topics and how future work might unfold

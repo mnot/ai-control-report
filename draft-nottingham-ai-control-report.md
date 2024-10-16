@@ -11,6 +11,8 @@ v: 3
 keyword:
  - policy
  - Artificial Intelligence
+ - Robots Exclusion Protocol
+ - web crawler
  - robots.txt
 
 author:
@@ -81,13 +83,81 @@ Participants agreed to conduct the workshop under the Chatham House Rule {{CHATH
 
 {{attendees}} lists the workshop participants, unless they requested that this information be witheld.
 
-# Overview
+# Overview of the AI Crawling Landscape
+
+The workshop began by surveying the state of AI control.
+
+Currently, Internet publishers express their preferences for how their content is treated for purposes of AI training using a variety of mechanisms, including declarative ones, such as terms of service and robots.txt {{RFC9309}}, and active ones, such as use of paywalls and selective blocking of crawlers (e.g., by IP address, User-Agent).
+
+There was disagreement about the implications of AI opt-out overall. Some participants expressed concern that use of such controls is becoming more prevalent, reducing the availability of data for AI training. Others expressed a need to opt out of AI training because of how they perceive its effects on their control over content, seeing AI as usurping their relationships with customers and a potential threat to whole industries.
+
+However, there was quick agreement that both viewpoints were harmed by the current state of AI opt-out -- a situation where "no one is better off" (in the words of one participant).
+
+Much of that dysfunction was attributed to the lack of coordination and standards for AI opt out. Currently, content publishers need to consult with each AI vendor to understand how to opt out of training its products, with significant variance in each vendor's behaviour. Furthermore, publishers need to continually monitor both for new vendors and for changes to the policies of those they are aware of.
+
+Underlying those immediate issues, however, are significant constraints that can be attributed to the nature of AI and opting out of it.
+
+## Crawl Time vs. Inference Time
+
+Perhaps most significant is the "crawl time vs. inference time" problem. Statements of preference are apparent at crawl time, bound to content either by location (e.g. robots.txt) or embedded inside the content itself as metadata. However, the target of those directives is often disassociated with the crawler, either because the crawl data is not only used for training AI models, or because the preferences are applicable at inference time.
+
+### Multiple Uses for Crawl Data
+
+A crawl's data might have multiple uses because the vendor also has another product that uses it (e.g., a search engine), or because the crawl is performed by a party other than the AI vendor. Both are very common patterns: operators of many Internet search engines also train AI models, and many AI models use third party crawl data. In either case, conflating different uses can change the incentives for publishers to cooperate with the crawler.
+
+Well-established uses of crawling such as Internet search were seen by participants as at least partially aligned with the interests of publishers: they allow their sites to be crawled, and in return they receive higher traffic and attention due to being in the search index. However, several participants pointed out that this symbiotic relationship does not exist for AI training uses -- with some viewing AI as hostile to publishers, because it has the capacity to take traffic from their sites.
+
+Therefore, when a crawler has multiple uses that include AI, participants observed that "collateral damage" was likely for non-AI uses, especially when publishers take more active control measures such as blocking or paywalls to protect their interests.
+
+Several participants expressed concerns about this phenomenon's effects on the ecosystem, effectively "locking down the Web" with one opining that there were implications on freedom of expression overall.
+
+### Application of Preferences
+
+Since LLMs generally cannot selectively use the information used to train them when performing a task, it is inherently difficult to apply such policies.
+
+
+
+## Trust
+
+Lack of attribution / incentive (attention) / monitoring
+Lack of trust - can't control untrustworthy parties.
+
+
+Not just copyright; privacy
+Copyright is opt-in; different properties
+RAG vs. general training
+
 
 # Attachment
+
+Multiple attachment necessary
+
+How policy mechansisms combine matters
+
+## robots.txt
+
+"broken"
+
+Granularity / control - eg youtube
+
+Doesn't move with content
+
+## embedding
+
+## registries
+
 
 # Vocabulary
 
 # Potential Future Work
+
+##
+
+enforcement
+registries
+identity
+
+
 
 # Security Considerations
 

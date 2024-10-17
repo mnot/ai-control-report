@@ -15,6 +15,10 @@ keyword:
  - web crawler
  - robots.txt
 
+pi:
+   compact: yes
+   subcompact: yes
+
 author:
  -
     ins: M. Nottingham
@@ -72,7 +76,7 @@ The Internet Architecture Board (IAB) holds occasional workshops designed to con
 
 The Internet is one of the major sources of data used to train large language models (LLMs, or more colloquially, "AI"). Because this use was not envisioned by most publishers of information on the Internet, a means of expressing the owners' preferences regarding AI crawling has emerged, sometimes backed by law (e.g., in the European Union's AI Act {{AI-ACT}}).
 
-The IAB convened the AI-CONTROL Workshop to "explore practical opt-out mechanisms for AI and build an understanding of use cases, requirements, and other considerations in this space." {{CFP}} In particular, the emerging practice of using the Robots Exclusion Protocol {{RFC9309}} -- also known as "robots.txt" -- has been uncoordinated, and may or may not be a suitable way to control AI crawlers. However, discussion was not limited to consideration of robots.txt, and approaches other than opt-out were considered.
+The IAB convened the AI-CONTROL Workshop to "explore practical opt-out mechanisms for AI and build an understanding of use cases, requirements, and other considerations in this space." {{CFP}} In particular, the emerging practice of using the Robots Exclusion Protocol {{?RFC9309}} -- also known as "robots.txt" -- has been uncoordinated, and may or may not be a suitable way to control AI crawlers. However, discussion was not limited to consideration of robots.txt, and approaches other than opt-out were considered.
 
 To assure many viewpoints were represented, the program committee invited a broad selection of technical experts, AI vendors, content publishers, civil society advocates, and policymakers.
 

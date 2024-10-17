@@ -113,26 +113,23 @@ Several participants expressed concerns about this phenomenon's effects on the e
 
 ### Application of Preferences
 
-Since LLMs generally cannot selectively use the information used to train them when performing a task, it is inherently difficult to apply such policies.
+When data is used to train an LLM, the resulting model does not have the ability to only selectively use a portion of it when performing a task, because inference uses the whole model, and it is not possible to identify specific input data for its use in doing so.
 
+This means that while publishers preferences may be available when content is crawled, they generally are not when inference takes place. Those preferences that are stated in reference to use by AI -- for example, "no military uses" or "non-commercial only" cannot be applied by a general-purpose "foundation" model.
 
+This leaves a few unappealing choices to AI vendors that wish to comply with those preferences. They can simply omit such data from foundation models, thereby reducing their viability. Or, they can create a separate model for each permutation of preferences -- with a likely proliferation of models as the set of permutations expands.
 
 ## Trust
 
-Lack of attribution / incentive (attention) / monitoring
-Lack of trust - can't control untrustworthy parties.
+This disconnection between the statement of preferences and its application was felt by participants to contribute to a lack of trust in the ecosystem, along with the typical lack of attribution for data sources in LLMs, lack of an incentive for publishers to contribute data, and finally (and most noted) a lack of any means of monitoring compliance with preferences.
 
-
-Not just copyright; privacy
-Copyright is opt-in; different properties
-RAG vs. general training
-
+This lack of trust was felt by many to be exacerbated by the inability to "control untrustworthy parties" who ignore stated preferences. Some participants also indicated that it was the primary cause of increasingly prevalent blocking of AI crawler IP addresses, among other measures.
 
 # Attachment
 
 Multiple attachment necessary
 
-How policy mechansisms combine matters
+How policy mechanisms combine matters
 
 ## robots.txt
 
@@ -148,6 +145,17 @@ Doesn't move with content
 
 
 # Vocabulary
+
+RAG vs. general training
+
+
+# Conclusions
+
+Participants seemed to agree that on its current path, the ecosystem is not sustainable. As one presenter remarked, "Robots.txt is broken and we broke it."
+
+Not just copyright; privacy
+Copyright is opt-in; different properties
+
 
 # Potential Future Work
 

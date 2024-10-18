@@ -129,13 +129,11 @@ This disconnection between the statement of preferences and its application was 
 
 This lack of trust was felt by many to be exacerbated by the inability to "control untrustworthy parties" who ignore stated preferences. Some participants also indicated that it was the primary cause of increasingly prevalent blocking of AI crawler IP addresses, among other measures.
 
-# Attachment
+## Attachment
 
-Multiple attachment necessary
+One of the primary focuses of the workshop was on _attachment_ -- how preferences are associated with content on the Internet. A range of mechanisms was discussed.
 
-How policy mechanisms combine matters
-
-## robots.txt
+### robots.txt (and similar)
 
 "broken"
 
@@ -143,27 +141,52 @@ Granularity / control - eg youtube
 
 Doesn't move with content
 
-## embedding
+### Embedding
 
-## registries
+Another mechanism for associating preferences with content is to embed them into the content format itself. Many formats used on the Internet allow this; for example, HTML has the `<meta>` tag, images have XMP and similar metadata sections, and XML and JSON have rich potential for extensions to carry such data.
 
+Embedded preferences
 
-# Vocabulary
+### Registries
+
+In some domains, it is already common to have a registry of copyrighted works that is consulted upon use. For example, this approach is often used for photographs, music, and video.
+
+Typically, registries use hashing mechanisms to create a "fingerprint" for the content that is robust to changes.
+
+Using a registry decouples the content in question from its location, so that it can be found even if moved. It is also claimed to be robust against stripping of embedded metadata, which is a common practice to improve performance and/or privacy.
+
+However, several participants pointed out issues with deploying registries at Internet scale. While they may be effective for (relatively) closed and well-known ecosystems such as commercial music publishing, applying them to a diverse and very large ecosystem like the Internet has proven problematic.
+
+## Vocabulary
+
+Another major focus area for the workshop was on _vocabulary_ -- the specific semantics of the opt-out signal.
+
+Several participants noted that there were many proposals for vocabularies, as well as many conflicting vocabularies already in use.
 
 RAG vs. general training
 
 
+
 # Conclusions
 
-Participants seemed to agree that on its current path, the ecosystem is not sustainable. As one presenter remarked, "Robots.txt is broken and we broke it."
+Participants seemed to agree that on its current path, the ecosystem is not sustainable. As one participant remarked, "Robots.txt is broken and we broke it."
 
 Not just copyright; privacy
 Copyright is opt-in; different properties
 
+Multiple attachment necessary
 
-# Potential Future Work
+How policy mechanisms combine matters
 
-##
+
+
+## Potential Standards Work
+
+IETF-related attachment - e.g., robots.txt, HTTP header
+Coordination with others
+Vocabulary
+
+### Out of IETF Scope
 
 enforcement
 registries
@@ -203,7 +226,7 @@ Lightning talks
 ### Friday 2024-09-20
 
 Opt-Out Attachment: robots.txt and beyond
-: Considerations in how policy is attached to content on the Internet
+: Considerations in how preferences are attached to content on the Internet
 
 Vocabulary: what opt-out means
 : What information the opt-out signal needs to convey

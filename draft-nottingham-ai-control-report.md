@@ -135,11 +135,17 @@ One of the primary focuses of the workshop was on _attachment_ -- how preference
 
 ### robots.txt (and similar)
 
-"broken"
+The Robots Exclusion Protocol {{RFC9309}} is widely recognised by AI vendors as an attachment mechanism for preferences. Several deficiencies were discussed.
 
-Granularity / control - eg youtube
+First, it does not scale to offer granular control over large sites where authors might want to express different policies for a range of content (for example, YouTube).
 
-Doesn't move with content
+Robots.txt also is typically under the control of the site administrator. If a site has content from many creators (as is often the case for social media and similar platforms), the administrator may not allow them to express their preferences fully, or at all.
+
+If content is copied or moved to a different site, the preferences at the new site need to be explicitly transferred, because robots.txt is a separate resource.
+
+These deficiencies made it clear to participants that robots.txt cannot be the only solution to opt-out: rather, it should be part of a larger system that addresses its shortcomings.
+
+Participants noted that other, similar attachment mechanisms have been proposed. However, none appear to have gained as much attention or implementation (both by AI vendors and content owners) as robots.txt.
 
 ### Embedding
 

@@ -78,7 +78,7 @@ The Internet is one of the major sources of data used to train large language mo
 
 The IAB convened the AI-CONTROL Workshop to "explore practical opt-out mechanisms for AI and build an understanding of use cases, requirements, and other considerations in this space." {{CFP}} In particular, the emerging practice of using the Robots Exclusion Protocol {{?RFC9309}} -- also known as "robots.txt" -- has been uncoordinated, and may or may not be a suitable way to control AI crawlers. However, discussion was not limited to consideration of robots.txt, and approaches other than opt-out were considered.
 
-To assure many viewpoints were represented, the program committee invited a broad selection of technical experts, AI vendors, content publishers, civil society advocates, and policymakers.
+To ensure many viewpoints were represented, the program committee invited a broad selection of technical experts, AI vendors, content publishers, civil society advocates, and policymakers.
 
 
 ## Chatham House Rule

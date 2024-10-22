@@ -171,9 +171,8 @@ However, several participants pointed out issues with deploying registries at In
 
 ## Vocabulary
 
-Another major focus area for the workshop was on _vocabulary_ -- the specific semantics of the opt-out signal.
+Another major focus area for the workshop was on _vocabulary_ -- the specific semantics of the opt-out signal. Several participants noted that there are already many proposals for vocabularies, as well as many conflicting vocabularies already in use.
 
-Several participants noted that there were many proposals for vocabularies, as well as many conflicting vocabularies already in use.
 
 RAG vs. general training
 
@@ -181,30 +180,33 @@ RAG vs. general training
 
 # Conclusions
 
-Participants seemed to agree that on its current path, the ecosystem is not sustainable. As one participant remarked, "Robots.txt is broken and we broke it."
+Participants seemed to agree that on its current path, the ecosystem is not sustainable. As one remarked, "robots.txt is broken and we broke it."
 
-Not just copyright; privacy
-Copyright is opt-in; different properties
+Legal uncertainty, along with fundamental limitations of opt-out regimes pointed out above, limit the effectiveness of any technical solution, which will be operating in a system unlike either robots.txt (where there is a symbiotic relationship between content owners and the crawlers) or copyright (where the default is effectively opt-in, not opt-out).
 
-Multiple attachment necessary
+However, the workshop ended with general agreement that positive steps could be taken to improve communication of preferences from content owners for AI use cases. In discussion, it was evident that discovery of preferences from multiple attachment mechanisms is necessary to meet the diverse needs of content authors, and that therefore defining how they are combined is important.
 
-How policy mechanisms combine matters
-
-
+We outline a proposed standard program below.
 
 ## Potential Standards Work
 
-IETF-related attachment - e.g., robots.txt, HTTP header
-Coordination with others
-Vocabulary
+The following items were felt to be good starting points for IETF work:
 
-### Out of IETF Scope
+* Attachment to Web sites by location (in robots.txt or a similar mechanism)
+* Attachment via embedding in IETF-controlled formats (e.g., HTTP headers)
+* Definition of a common core vocabulary
+* Definition of the overall regime; e.g., how to combine preferences discovered from multiple attachment mechanisms
 
-enforcement
-registries
-identity
+It would be expected that the IETF would coordinate with other SDOs to define embedding in other formats (e.g., HTML).
 
+### Out of Initial Scope
 
+It was broadly agreed that it would not be useful to work on the following items, at least to begin with:
+
+* Enforcement mechanisms for preferences
+* Registry-based solutions
+* Identifying or authenticating crawlers and/or content owners
+* Audit or transparency mechanisms
 
 # Security Considerations
 

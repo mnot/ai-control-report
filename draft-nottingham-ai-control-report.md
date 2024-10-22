@@ -93,7 +93,7 @@ The workshop began by surveying the state of AI control.
 
 Currently, Internet publishers express their preferences for how their content is treated for purposes of AI training using a variety of mechanisms, including declarative ones, such as terms of service and robots.txt {{RFC9309}}, and active ones, such as use of paywalls and selective blocking of crawlers (e.g., by IP address, User-Agent).
 
-There was disagreement about the implications of AI opt-out overall. Some participants expressed concern that use of such controls is becoming more prevalent, reducing the availability of data for AI training. Others expressed a need to opt out of AI training because of how they perceive its effects on their control over content, seeing AI as usurping their relationships with customers and a potential threat to whole industries.
+There was disagreement about the implications of AI opt-out overall. Some participants expressed concern that use of such controls is becoming more prevalent, reducing the availability of data for AI training -- although at least one AI vendor disagreed with this view, indicating that "there are plenty of tokens available" for training, even if many opt out. Others expressed a need to opt out of AI training because of how they perceive its effects on their control over content, seeing AI as usurping their relationships with customers and a potential threat to whole industries.
 
 However, there was quick agreement that both viewpoints were harmed by the current state of AI opt-out -- a situation where "no one is better off" (in the words of one participant).
 

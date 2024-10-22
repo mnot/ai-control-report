@@ -105,7 +105,7 @@ Table of Contents
    crawlers.  However, discussion was not limited to consideration of
    robots.txt, and approaches other than opt-out were considered.
 
-   To assure many viewpoints were represented, the program committee
+   To ensure many viewpoints were represented, the program committee
    invited a broad selection of technical experts, AI vendors, content
    publishers, civil society advocates, and policymakers.
 

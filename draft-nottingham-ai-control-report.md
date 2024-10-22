@@ -217,7 +217,7 @@ _TODO_
 
 # About the Workshop
 
-The AI-CONTROl Workshop was held on 2024-09-19 and 2024-09-29 at Wilkinson Barker Knauer in Washington DC, USA.
+The AI-CONTROL Workshop was held on 2024-09-19 and 2024-09-29 at Wilkinson Barker Knauer in Washington DC, USA.
 
 Workshop attendees were asked to submit position papers. These papers are published on the IAB website [CFP], unless the submitter requested it be withheld.
 

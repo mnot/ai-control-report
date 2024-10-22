@@ -171,11 +171,9 @@ However, several participants pointed out issues with deploying registries at In
 
 ## Vocabulary
 
-Another major focus area for the workshop was on _vocabulary_ -- the specific semantics of the opt-out signal. Several participants noted that there are already many proposals for vocabularies, as well as many conflicting vocabularies already in use.
+Another major focus area for the workshop was on _vocabulary_ -- the specific semantics of the opt-out signal. Several participants noted that there are already many proposals for vocabularies, as well as many conflicting vocabularies already in use. Several examples were discussed, including where existing terms were ambiguous, did not address common use cases, or were used in conflicting way by different actors.
 
-
-RAG vs. general training
-
+Although no conclusions regarding exact vocabulary were reached, it was generally agreed that a complex vocabulary is unlikely to succeed.
 
 
 # Conclusions

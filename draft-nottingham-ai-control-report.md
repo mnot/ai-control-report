@@ -99,7 +99,7 @@ However, there was quick agreement that both viewpoints were harmed by the curre
 
 Much of that dysfunction was attributed to the lack of coordination and standards for AI opt out. Currently, content publishers need to consult with each AI vendor to understand how to opt out of training its products, with significant variance in each vendor's behaviour. Furthermore, publishers need to continually monitor both for new vendors and for changes to the policies of those they are aware of.
 
-Underlying those immediate issues, however, are significant constraints that can be attributed to the nature of AI and opting out of it.
+Underlying those immediate issues, however, are significant constraints that could be attributed to uncertainties in the legal context, the nature of AI, and the implications of needing to opt out of crawling for it.
 
 ## Crawl Time vs. Inference Time
 
@@ -149,13 +149,19 @@ Participants noted that other, similar attachment mechanisms have been proposed.
 
 ### Embedding
 
-Another mechanism for associating preferences with content is to embed them into the content format itself. Many formats used on the Internet allow this; for example, HTML has the `<meta>` tag, images have XMP and similar metadata sections, and XML and JSON have rich potential for extensions to carry such data.
+Another mechanism for associating preferences with content is to embed them into the content itself. Many formats used on the Internet allow this; for example, HTML has the `<meta>` tag, images have XMP and similar metadata sections, and XML and JSON have rich potential for extensions to carry such data.
 
-Embedded preferences
+Embedded preferences were seen to have the advantage of granularity, and of "travelling with" content as it is produced, when it is moved from site to site, or when it is stored offline.
+
+However, several participants pointed out that embedded preferences are easily stripped from most formats. This is a common practice for reducing the size of a file (thereby improving performance when downloading it), and for assuring privacy (since metadata often leaks information unintentionally).
+
+Furthermore, some types of content are not suitable for embedding. For example, it is not possible to embed preferences into purely textual content, and Web pages with content from several producers (such as a social media or comments feed) cannot easily reflect preferences for each one.
+
+Participants noted that the means of embedding preferences in many formats would need to be determined by or coordinated with organisations outside the IETF. For example, HTML and many image formats are maintained by external bodies.
 
 ### Registries
 
-In some domains, it is already common to have a registry of copyrighted works that is consulted upon use. For example, this approach is often used for photographs, music, and video.
+In some existing copyright management regimes, it is already common to have a registry of works that is consulted upon use. For example, this approach is often used for photographs, music, and video.
 
 Typically, registries use hashing mechanisms to create a "fingerprint" for the content that is robust to changes.
 

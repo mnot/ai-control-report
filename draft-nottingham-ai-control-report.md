@@ -52,7 +52,7 @@ informative:
     author:
       -
         org: Internet Architecture Board
-        
+
   PAPERS:
     title: IAB Workshop on AI-CONTROL Materials
     target: https://datatracker.ietf.org/group/aicontrolws/materials/

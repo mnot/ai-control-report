@@ -5,8 +5,8 @@
 Network Working Group                                      M. Nottingham
 Internet-Draft                                                Cloudflare
 Intended status: Informational                               S. Krishnan
-Expires: 25 April 2025                                             Cisco
-                                                         22 October 2024
+Expires: 26 April 2025                                             Cisco
+                                                         23 October 2024
 
 
                      IAB AI-CONTROL Workshop Report
@@ -17,7 +17,7 @@ Abstract
    The AI-CONTROL Workshop was convened by the Internet Architecture
    Board (IAB) in September 2024.  This report summarizes its
    significant points of discussion and identifies topics that may
-   warrant further consideration.
+   warrant further consideration and follow up work.
 
    Note that this document is a report on the proceedings of the
    workshop.  The views and positions documented in this report are
@@ -39,7 +39,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 25 April 2025.
+   This Internet-Draft will expire on 26 April 2025.
 
 Copyright Notice
 
@@ -56,6 +56,7 @@ Table of Contents
 
    1.  Introduction
      1.1.  Chatham House Rule
+     1.2.  About the contents of this workshop report
    2.  Overview of the AI Crawling Landscape
      2.1.  Crawl Time vs. Inference Time
        2.1.1.  Multiple Uses for Crawl Data
@@ -120,6 +121,19 @@ Table of Contents
    Appendix A.2 lists the workshop participants, unless they requested
    that this information be witheld.
 
+1.2.  About the contents of this workshop report
+
+   This document is a report on the proceedings of the workshop.  The
+   views and positions documented in this report are expressed during
+   the workshop by participants and do not necessarily reflect IAB's
+   views and positions.
+
+   Furthermore, the content of the report comes from presentations given
+   by workshop participants and notes taken during the discussions,
+   without interpretation or validation.  Thus, the content of this
+   report follows the flow and dialogue of the workshop but does not
+   attempt to capture a consensus.
+
 2.  Overview of the AI Crawling Landscape
 
    The workshop began by surveying the state of AI control.
@@ -133,11 +147,11 @@ Table of Contents
    There was disagreement about the implications of AI opt-out overall.
    Some participants expressed concern that use of such controls is
    becoming more prevalent, reducing the availability of data for AI
-   training -- although at least one AI vendor disagreed with this view,
-   indicating that "there are plenty of tokens available" for training,
-   even if many opt out.  Others expressed a need to opt out of AI
-   training because of how they perceive its effects on their control
-   over content, seeing AI as usurping their relationships with
+   training -- although at least one AI vendor seemed less concerned by
+   this, indicating that "there are plenty of tokens available" for
+   training, even if many opt out.  Others expressed a need to opt out
+   of AI training because of how they perceive its effects on their
+   control over content, seeing AI as usurping their relationships with
    customers and a potential threat to whole industries.
 
    However, there was quick agreement that both viewpoints were harmed
@@ -147,9 +161,10 @@ Table of Contents
    Much of that dysfunction was attributed to the lack of coordination
    and standards for AI opt out.  Currently, content publishers need to
    consult with each AI vendor to understand how to opt out of training
-   its products, with significant variance in each vendor's behaviour.
-   Furthermore, publishers need to continually monitor both for new
-   vendors and for changes to the policies of those they are aware of.
+   their products, as there is significant variance in each vendor's
+   behaviour.  Furthermore, publishers need to continually monitor both
+   for new vendors, and for changes to the policies of the vendors they
+   are aware of.
 
    Underlying those immediate issues, however, are significant
    constraints that could be attributed to uncertainties in the legal
@@ -162,7 +177,7 @@ Table of Contents
    problem.  Statements of preference are apparent at crawl time, bound
    to content either by location (e.g. robots.txt) or embedded inside
    the content itself as metadata.  However, the target of those
-   directives is often disassociated with the crawler, either because
+   directives is often disassociated from the crawler, either because
    the crawl data is not only used for training AI models, or because
    the preferences are applicable at inference time.
 
@@ -183,7 +198,7 @@ Table of Contents
    index.  However, several participants pointed out that this symbiotic
    relationship does not exist for AI training uses -- with some viewing
    AI as hostile to publishers, because it has the capacity to take
-   traffic from their sites.
+   traffic away from their sites.
 
    Therefore, when a crawler has multiple uses that include AI,
    participants observed that "collateral damage" was likely for non-AI
@@ -389,6 +404,11 @@ Table of Contents
               n.d.,
               <https://datatracker.ietf.org/group/aicontrolws/about/>.
 
+   [PAPERS]   Internet Architecture Board, "IAB Workshop on AI-CONTROL
+              Materials", n.d.,
+              <https://datatracker.ietf.org/group/aicontrolws/
+              materials/>.
+
    [AI-ACT]   European Parliament, "Regulation (eu) 2024/1689 of the
               European Parliament and of the Council", 13 June 2024,
               <https://eur-lex.europa.eu/eli/reg/2024/1689/oj>.
@@ -404,8 +424,8 @@ Appendix A.  About the Workshop
    Wilkinson Barker Knauer in Washington DC, USA.
 
    Workshop attendees were asked to submit position papers.  These
-   papers are published on the IAB website [CFP], unless the submitter
-   requested it be withheld.
+   papers are published on the IAB website [PAPERS], unless the
+   submitter requested it be withheld.
 
    The workshop was conducted under the Chatham House Rule
    [CHATHAM-HOUSE], meaning that statements cannot be attributed to

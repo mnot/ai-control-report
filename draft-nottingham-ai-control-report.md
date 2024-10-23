@@ -52,6 +52,13 @@ informative:
     author:
       -
         org: Internet Architecture Board
+        
+  PAPERS:
+    title: IAB Workshop on AI-CONTROL Materials
+    target: https://datatracker.ietf.org/group/aicontrolws/materials/
+    author:
+      -
+        org: Internet Architecture Board
 
   AI-ACT:
     title: Regulation (eu) 2024/1689 of the European Parliament and of the Council
@@ -63,7 +70,7 @@ informative:
 
 --- abstract
 
-The AI-CONTROL Workshop was convened by the Internet Architecture Board (IAB) in September 2024. This report summarizes its significant points of discussion and identifies topics that may warrant further consideration.
+The AI-CONTROL Workshop was convened by the Internet Architecture Board (IAB) in September 2024. This report summarizes its significant points of discussion and identifies topics that may warrant further consideration and follow up work.
 
 Note that this document is a report on the proceedings of the workshop. The views and positions documented in this report are those of the workshop participants and do not necessarily reflect IAB views and positions.
 
@@ -87,29 +94,35 @@ Participants agreed to conduct the workshop under the Chatham House Rule {{CHATH
 
 {{attendees}} lists the workshop participants, unless they requested that this information be witheld.
 
+## About the contents of this workshop report
+
+This document is a report on the proceedings of the workshop. The views and positions documented in this report are expressed during the workshop by participants and do not necessarily reflect IAB's views and positions.
+
+Furthermore, the content of the report comes from presentations given by workshop participants and notes taken during the discussions, without interpretation or validation. Thus, the content of this report follows the flow and dialogue of the workshop but does not attempt to capture a consensus.
+
 # Overview of the AI Crawling Landscape
 
 The workshop began by surveying the state of AI control.
 
 Currently, Internet publishers express their preferences for how their content is treated for purposes of AI training using a variety of mechanisms, including declarative ones, such as terms of service and robots.txt {{RFC9309}}, and active ones, such as use of paywalls and selective blocking of crawlers (e.g., by IP address, User-Agent).
 
-There was disagreement about the implications of AI opt-out overall. Some participants expressed concern that use of such controls is becoming more prevalent, reducing the availability of data for AI training -- although at least one AI vendor disagreed with this view, indicating that "there are plenty of tokens available" for training, even if many opt out. Others expressed a need to opt out of AI training because of how they perceive its effects on their control over content, seeing AI as usurping their relationships with customers and a potential threat to whole industries.
+There was disagreement about the implications of AI opt-out overall. Some participants expressed concern that use of such controls is becoming more prevalent, reducing the availability of data for AI training -- although at least one AI vendor seemed less concerned by this, indicating that "there are plenty of tokens available" for training, even if many opt out. Others expressed a need to opt out of AI training because of how they perceive its effects on their control over content, seeing AI as usurping their relationships with customers and a potential threat to whole industries.
 
 However, there was quick agreement that both viewpoints were harmed by the current state of AI opt-out -- a situation where "no one is better off" (in the words of one participant).
 
-Much of that dysfunction was attributed to the lack of coordination and standards for AI opt out. Currently, content publishers need to consult with each AI vendor to understand how to opt out of training its products, with significant variance in each vendor's behaviour. Furthermore, publishers need to continually monitor both for new vendors and for changes to the policies of those they are aware of.
+Much of that dysfunction was attributed to the lack of coordination and standards for AI opt out. Currently, content publishers need to consult with each AI vendor to understand how to opt out of training their products, as there is significant variance in each vendor's behaviour. Furthermore, publishers need to continually monitor both for new vendors, and for changes to the policies of the vendors they are aware of.
 
 Underlying those immediate issues, however, are significant constraints that could be attributed to uncertainties in the legal context, the nature of AI, and the implications of needing to opt out of crawling for it.
 
 ## Crawl Time vs. Inference Time
 
-Perhaps most significant is the "crawl time vs. inference time" problem. Statements of preference are apparent at crawl time, bound to content either by location (e.g. robots.txt) or embedded inside the content itself as metadata. However, the target of those directives is often disassociated with the crawler, either because the crawl data is not only used for training AI models, or because the preferences are applicable at inference time.
+Perhaps most significant is the "crawl time vs. inference time" problem. Statements of preference are apparent at crawl time, bound to content either by location (e.g. robots.txt) or embedded inside the content itself as metadata. However, the target of those directives is often disassociated from the crawler, either because the crawl data is not only used for training AI models, or because the preferences are applicable at inference time.
 
 ### Multiple Uses for Crawl Data
 
 A crawl's data might have multiple uses because the vendor also has another product that uses it (e.g., a search engine), or because the crawl is performed by a party other than the AI vendor. Both are very common patterns: operators of many Internet search engines also train AI models, and many AI models use third party crawl data. In either case, conflating different uses can change the incentives for publishers to cooperate with the crawler.
 
-Well-established uses of crawling such as Internet search were seen by participants as at least partially aligned with the interests of publishers: they allow their sites to be crawled, and in return they receive higher traffic and attention due to being in the search index. However, several participants pointed out that this symbiotic relationship does not exist for AI training uses -- with some viewing AI as hostile to publishers, because it has the capacity to take traffic from their sites.
+Well-established uses of crawling such as Internet search were seen by participants as at least partially aligned with the interests of publishers: they allow their sites to be crawled, and in return they receive higher traffic and attention due to being in the search index. However, several participants pointed out that this symbiotic relationship does not exist for AI training uses -- with some viewing AI as hostile to publishers, because it has the capacity to take traffic away from their sites.
 
 Therefore, when a crawler has multiple uses that include AI, participants observed that "collateral damage" was likely for non-AI uses, especially when publishers take more active control measures such as blocking or paywalls to protect their interests.
 
@@ -121,7 +134,7 @@ When data is used to train an LLM, the resulting model does not have the ability
 
 This means that while publishers preferences may be available when content is crawled, they generally are not when inference takes place. Those preferences that are stated in reference to use by AI -- for example, "no military uses" or "non-commercial only" cannot be applied by a general-purpose "foundation" model.
 
-This leaves a few unappealing choices to AI vendors that wish to comply with those preferences. They can simply omit such data from foundation models, thereby reducing their viability. Or, they can create a separate model for each permutation of preferences -- with a likely proliferation of models as the set of permutations expands.
+This leaves a few unappealing choices to AI vendors that wish to comply with those preferences. They can simply omit such data from foundation models, thereby reducing their viability. Or, they can create a separate model for each permutation of preferences -- with a likely proliferation of models as the set of permutations expands. 
 
 ## Trust
 
@@ -219,7 +232,7 @@ _TODO_
 
 The AI-CONTROL Workshop was held on 2024-09-19 and 2024-09-29 at Wilkinson Barker Knauer in Washington DC, USA.
 
-Workshop attendees were asked to submit position papers. These papers are published on the IAB website [CFP], unless the submitter requested it be withheld.
+Workshop attendees were asked to submit position papers. These papers are published on the IAB website [PAPERS], unless the submitter requested it be withheld.
 
 The workshop was conducted under the Chatham House Rule [CHATHAM-HOUSE], meaning that statements cannot be attributed to individuals or organizations without explicit authorization.
 

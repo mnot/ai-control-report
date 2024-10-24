@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-10-22T00:23:23.844280+00:00",
+  "timestamp": "2024-10-24T00:23:10.503923+00:00",
   "repo": "mnot/ai-control-report",
   "labels": [
     {
@@ -50,5 +50,123 @@
     }
   ],
   "issues": [],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOM49ySM5_ad5O",
+      "title": "AI-CONTROI",
+      "url": "https://github.com/mnot/ai-control-report/pull/1",
+      "state": "MERGED",
+      "author": "martinthomson",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-10-22T06:59:11Z",
+      "updatedAt": "2024-10-22T07:33:44Z",
+      "baseRepository": "mnot/ai-control-report",
+      "baseRefName": "main",
+      "baseRefOid": "c22d8445a6e1bcd8a1e7b3cb314170eb43f0b456",
+      "headRepository": "mnot/ai-control-report",
+      "headRefName": "typo",
+      "headRefOid": "909a11d139aa4fbb8b3f4ddc1844fb8a1cdc6b39",
+      "closedAt": "2024-10-22T07:33:38Z",
+      "mergedAt": "2024-10-22T07:33:38Z",
+      "mergedBy": "mnot",
+      "mergeCommit": {
+        "oid": "d30ed0b4ccf94311bb5e7b1438c988e15ec914f0"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 2,
+      "id": "PR_kwDOM49ySM5_ri7t",
+      "title": "Update draft-nottingham-ai-control-report.md",
+      "url": "https://github.com/mnot/ai-control-report/pull/2",
+      "state": "MERGED",
+      "author": "sureshkrishnan",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Minor changes and add clarification about workshop report content",
+      "createdAt": "2024-10-23T21:04:14Z",
+      "updatedAt": "2024-10-23T23:57:10Z",
+      "baseRepository": "mnot/ai-control-report",
+      "baseRefName": "main",
+      "baseRefOid": "d30ed0b4ccf94311bb5e7b1438c988e15ec914f0",
+      "headRepository": "mnot/ai-control-report",
+      "headRefName": "sureshkrishnan-patch-1",
+      "headRefOid": "171215ddf9e83c4b495cabf47f196ab2d3636043",
+      "closedAt": "2024-10-23T23:57:05Z",
+      "mergedAt": "2024-10-23T23:57:05Z",
+      "mergedBy": "mnot",
+      "mergeCommit": {
+        "oid": "d62abfa89b7440c1fa2de97b5c2ae613cd1582c9"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOM49ySM6OggIc",
+          "commit": {
+            "abbreviatedOid": "e59b01a"
+          },
+          "author": "mnot",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-10-23T23:54:24Z",
+          "updatedAt": "2024-10-23T23:54:24Z",
+          "comments": [
+            {
+              "originalPosition": 68,
+              "body": "tsk tsk\r\n```suggestion\r\nThis leaves a few unappealing choices to AI vendors that wish to comply with those preferences. They can simply omit such data from foundation models, thereby reducing their viability. Or, they can create a separate model for each permutation of preferences -- with a likely proliferation of models as the set of permutations expands.\r\n```",
+              "createdAt": "2024-10-23T23:54:24Z",
+              "updatedAt": "2024-10-23T23:54:24Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOM49ySM6OggoA",
+          "commit": {
+            "abbreviatedOid": "b69ce56"
+          },
+          "author": "mnot",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-10-23T23:56:02Z",
+          "updatedAt": "2024-10-23T23:56:03Z",
+          "comments": [
+            {
+              "originalPosition": 10,
+              "body": "```suggestion\r\n\r\n  PAPERS:\r\n    title: IAB Workshop on AI-CONTROL Materials\r\n    target: https://datatracker.ietf.org/group/aicontrolws/materials/\r\n    author:\r\n      -\r\n        org: Internet Architecture Board\r\n```",
+              "createdAt": "2024-10-23T23:56:03Z",
+              "updatedAt": "2024-10-23T23:56:03Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOM49ySM6OggqE",
+          "commit": {
+            "abbreviatedOid": "b69ce56"
+          },
+          "author": "mnot",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-10-23T23:56:14Z",
+          "updatedAt": "2024-10-23T23:56:14Z",
+          "comments": [
+            {
+              "originalPosition": 10,
+              "body": "moat spurious spaces",
+              "createdAt": "2024-10-23T23:56:14Z",
+              "updatedAt": "2024-10-23T23:56:14Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

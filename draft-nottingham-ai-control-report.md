@@ -72,8 +72,6 @@ informative:
 
 The AI-CONTROL Workshop was convened by the Internet Architecture Board (IAB) in September 2024. This report summarizes its significant points of discussion and identifies topics that may warrant further consideration and follow up work.
 
-Note that this document is a report on the proceedings of the workshop. The views and positions documented in this report are those of the workshop participants and do not necessarily reflect IAB views and positions.
-
 
 --- middle
 
@@ -94,7 +92,7 @@ Participants agreed to conduct the workshop under the Chatham House Rule {{CHATH
 
 {{attendees}} lists the workshop participants, unless they requested that this information be witheld.
 
-## About the contents of this workshop report
+## Views Expressed in this Report
 
 This document is a report on the proceedings of the workshop. The views and positions documented in this report are expressed during the workshop by participants and do not necessarily reflect IAB's views and positions.
 

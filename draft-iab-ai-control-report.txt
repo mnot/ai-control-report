@@ -10,7 +10,7 @@ Expires: 29 April 2025                                             Cisco
 
 
                      IAB AI-CONTROL Workshop Report
-               draft-nottingham-ai-control-report-latest
+                   draft-iab-ai-control-report-latest
 
 Abstract
 

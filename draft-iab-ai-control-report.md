@@ -2,7 +2,7 @@
 title: "IAB AI-CONTROL Workshop Report"
 category: info
 
-docname: draft-nottingham-ai-control-report-latest
+docname: draft-iab-ai-control-report-latest
 submissiontype: IAB
 number:
 date:

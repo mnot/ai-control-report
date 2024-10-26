@@ -5,8 +5,8 @@
 Network Working Group                                      M. Nottingham
 Internet-Draft                                                Cloudflare
 Intended status: Informational                               S. Krishnan
-Expires: 26 April 2025                                             Cisco
-                                                         23 October 2024
+Expires: 29 April 2025                                             Cisco
+                                                         26 October 2024
 
 
                      IAB AI-CONTROL Workshop Report
@@ -18,11 +18,6 @@ Abstract
    Board (IAB) in September 2024.  This report summarizes its
    significant points of discussion and identifies topics that may
    warrant further consideration and follow up work.
-
-   Note that this document is a report on the proceedings of the
-   workshop.  The views and positions documented in this report are
-   those of the workshop participants and do not necessarily reflect IAB
-   views and positions.
 
 Status of This Memo
 
@@ -39,7 +34,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 26 April 2025.
+   This Internet-Draft will expire on 29 April 2025.
 
 Copyright Notice
 
@@ -56,7 +51,7 @@ Table of Contents
 
    1.  Introduction
      1.1.  Chatham House Rule
-     1.2.  About the contents of this workshop report
+     1.2.  Views Expressed in this Report
    2.  Overview of the AI Crawling Landscape
      2.1.  Crawl Time vs. Inference Time
        2.1.1.  Multiple Uses for Crawl Data
@@ -121,7 +116,7 @@ Table of Contents
    Appendix A.2 lists the workshop participants, unless they requested
    that this information be witheld.
 
-1.2.  About the contents of this workshop report
+1.2.  Views Expressed in this Report
 
    This document is a report on the proceedings of the workshop.  The
    views and positions documented in this report are expressed during
@@ -228,6 +223,11 @@ Table of Contents
    foundation models, thereby reducing their viability.  Or, they can
    create a separate model for each permutation of preferences -- with a
    likely proliferation of models as the set of permutations expands.
+
+   Compounding this issue was the observation that preferences change
+   over time, whereas LLMs are created over long time frames and cannot
+   easily be updated to reflect those changes.  Of particular concern to
+   some was how an opt-out regime makes the default stickier.
 
 2.2.  Trust
 

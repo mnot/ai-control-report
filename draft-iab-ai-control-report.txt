@@ -141,9 +141,9 @@ Table of Contents
 
    There was disagreement about the implications of AI opt-out overall.
    Research indicates that the use of such controls is becoming more
-   prevalent, reducing the availability of data for AI training.  She
-   participants expressed concern about the implications of this --
-   although at least one AI vendor seemed less concerned by this,
+   prevalent, reducing the availability of data for AI training.  Some
+   of the participants expressed concern about the implications of this
+   -- although at least one AI vendor seemed less concerned by this,
    indicating that "there are plenty of tokens available" for training,
    even if many opt out.  Others expressed a need to opt out of AI
    training because of how they perceive its effects on their control

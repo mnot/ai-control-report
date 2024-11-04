@@ -70,7 +70,7 @@ informative:
 
 --- abstract
 
-The AI-CONTROL Workshop was convened by the Internet Architecture Board (IAB) in September 2024. This report summarizes its significant points of discussion and identifies topics that may warrant further consideration and follow up work.
+The AI-CONTROL Workshop was convened by the Internet Architecture Board (IAB) in September 2024. This report summarizes its significant points of discussion and identifies topics that may warrant further consideration and work.
 
 
 --- middle
@@ -79,7 +79,7 @@ The AI-CONTROL Workshop was convened by the Internet Architecture Board (IAB) in
 
 The Internet Architecture Board (IAB) holds occasional workshops designed to consider long-term issues and strategies for the Internet, and to suggest future directions for the Internet architecture. This long-term planning function of the IAB is complementary to the ongoing engineering efforts performed by working groups of the Internet Engineering Task Force (IETF).
 
-The Internet is one of the major sources of data used to train large language models (LLMs, or more colloquially, "AI"). Because this use was not envisioned by most publishers of information on the Internet, a means of expressing the owners' preferences regarding AI crawling has emerged, sometimes backed by law (e.g., in the European Union's AI Act {{AI-ACT}}).
+The Internet is one of the major sources of data used to train large language models (LLMs, or more generally "AI"). Because this use was not envisioned by most publishers of information on the Internet, a means of expressing the owners' preferences regarding AI crawling has emerged, sometimes backed by law (e.g., in the European Union's AI Act {{AI-ACT}}).
 
 The IAB convened the AI-CONTROL Workshop to "explore practical opt-out mechanisms for AI and build an understanding of use cases, requirements, and other considerations in this space." {{CFP}} In particular, the emerging practice of using the Robots Exclusion Protocol {{?RFC9309}} -- also known as "robots.txt" -- has been uncoordinated, and may or may not be a suitable way to control AI crawlers. However, discussion was not limited to consideration of robots.txt, and approaches other than opt-out were considered.
 
@@ -104,7 +104,7 @@ The workshop began by surveying the state of AI control.
 
 Currently, Internet publishers express their preferences for how their content is treated for purposes of AI training using a variety of mechanisms, including declarative ones, such as terms of service and robots.txt {{RFC9309}}, and active ones, such as use of paywalls and selective blocking of crawlers (e.g., by IP address, User-Agent).
 
-There was disagreement about the implications of AI opt-out overall. Some participants expressed concern that use of such controls is becoming more prevalent, reducing the availability of data for AI training -- although at least one AI vendor seemed less concerned by this, indicating that "there are plenty of tokens available" for training, even if many opt out. Others expressed a need to opt out of AI training because of how they perceive its effects on their control over content, seeing AI as usurping their relationships with customers and a potential threat to whole industries.
+There was disagreement about the implications of AI opt-out overall. Research indicates that the use of such controls is becoming more prevalent, reducing the availability of data for AI training. She participants expressed concern about the implications of this -- although at least one AI vendor seemed less concerned by this, indicating that "there are plenty of tokens available" for training, even if many opt out. Others expressed a need to opt out of AI training because of how they perceive its effects on their control over content, seeing AI as usurping their relationships with customers and a potential threat to whole industries.
 
 However, there was quick agreement that both viewpoints were harmed by the current state of AI opt-out -- a situation where "no one is better off" (in the words of one participant).
 
@@ -140,7 +140,7 @@ Compounding this issue was the observation that preferences change over time, wh
 
 This disconnection between the statement of preferences and its application was felt by participants to contribute to a lack of trust in the ecosystem, along with the typical lack of attribution for data sources in LLMs, lack of an incentive for publishers to contribute data, and finally (and most noted) a lack of any means of monitoring compliance with preferences.
 
-This lack of trust was felt by many to be exacerbated by the inability to "control untrustworthy parties" who ignore stated preferences. Some participants also indicated that it was the primary cause of increasingly prevalent blocking of AI crawler IP addresses, among other measures.
+This lack of trust led some participations to question whether communicating preferences is sufficient in all cases without an accompanying way to mitigate or track cases of those preferences being followed. Some participants also indicated that lack of trust was the primary cause of increasingly prevalent blocking of AI crawler IP addresses, among other measures.
 
 ## Attachment
 
@@ -156,7 +156,7 @@ Robots.txt also is typically under the control of the site administrator. If a s
 
 If content is copied or moved to a different site, the preferences at the new site need to be explicitly transferred, because robots.txt is a separate resource.
 
-These deficiencies made it clear to participants that robots.txt cannot be the only solution to opt-out: rather, it should be part of a larger system that addresses its shortcomings.
+These deficiencies led many participants to feel that robots.txt cannot be the only solution to opt-out: rather, it should be part of a larger system that addresses its shortcomings.
 
 Participants noted that other, similar attachment mechanisms have been proposed. However, none appear to have gained as much attention or implementation (both by AI vendors and content owners) as robots.txt.
 
